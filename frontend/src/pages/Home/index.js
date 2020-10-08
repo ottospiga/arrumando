@@ -1,90 +1,79 @@
-import React, { useCallback, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
 
-// import filesize from 'filesize';
-
-import alert from '../../assets/alert.svg';
-import logoImg from '../../assets/logo.svg';
-import { ImportFileContainer, Footer, H2 } from './styles';
-
-import { Table, CardDeck, Card, Col, Row, Container } from 'react-bootstrap';
+import NavBar from '../../components/NavBar';
+import { Container, Card, Row, Col  } from 'react-bootstrap';
+import { H2 } from './styles';
 
 export default function Home(){
 
   return (
     <Container fluid>
-      <Row>
-      <Col>
-        <h1>
-          <img src={logoImg} alt="Micro"/>
-          MicroCell
-        </h1>
-        <h2>Analise sua célula</h2>
-      </Col>
-    </Row>
-      <CardDeck>
-        <Card>
-          <Card.Body>
-            <ImportFileContainer>
-                <Footer>
-                  <p>
-                    <img src={alert} alt="Alert" />
-                    Apenas .csv TROCAR quando for deploy
-                  </p>
-                  {/* <Buttonx  type="button">
-                    Analisar
-                  </Buttonx> */}
-                </Footer>
-              </ImportFileContainer>
-            </Card.Body>
-          </Card>
-        <Card>
-        <Card.Header as="h5">
-          <H2>Resultado da Análise</H2>
-          </Card.Header>
-          <Card.Body>
-            <Table responsive="sm">
-              <thead>
-                <tr>
-                  <th>Célula</th>
-                  <th>Acerto (%)</th>
-                  <th>Erro (%)</th>
-                  <th>Table heading</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Neutrófilo</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <td>Eosinófilo</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <td>Linfócito</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-                <tr>
-                  <td>Monócito</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                  <td>Table cell</td>
-                </tr>
-              </tbody>
-            </Table>
+      <NavBar />
 
-          </Card.Body>
-        </Card>
-      </CardDeck>
+        <Row>
 
+          <Col>
+              <Card
+              //  style={{ width: '20rem' }}
+              >
+                <Card.Body>
+                  <Card.Title style={{color:'#011936'}}>O que é esse site?!</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Projeto dedicado a união de áreas</Card.Subtitle>
+                  <Card.Text style={{color:'#465362'}}>
+                    Reconhecimento de células hematologicas com AI/RN.
+                  </Card.Text>
+                  <Card.Link href="/analise">Analise Hematologica</Card.Link>
+                  <Card.Link href="/ajudar">Como ajudar</Card.Link>
+                </Card.Body>
+              </Card>  
+            </Col>
 
-  </Container>
+        </Row>
+        <br/>
+        <Row>
+          <Col>
+            <Card>
+              <Card.Header as="h5">
+                <H2>Nosso Golden Circle</H2>
+                </Card.Header>
+                <Card.Body>
+                <Card.Title style={{color:'#011936'}}>Why</Card.Title>
+                <Card.Text style={{color:'#465362'}}>
+                  Ajudar, Solucionar, Facilitar! 
+                </Card.Text>
+                <Card.Title style={{color:'#011936'}}>How</Card.Title>
+                <Card.Text style={{color:'#465362'}}>
+                  Fazendo = Tecnologia + Saúde/Biologicas
+                </Card.Text>
+                <Card.Title style={{color:'#011936'}}>What</Card.Title>  
+                <Card.Text style={{color:'#465362'}}>
+                  O mundo acadêmico tenta fracionar as áreas para facilitar o entendimento,
+                  mas as melhores soluções são as mixturadas.
+                  Então mixturando as aréas de conhecimento vamos ajudar a vizualização
+                  de cálulas, patógenos e demais requesitos da área!
+                </Card.Text>
+                </Card.Body>
+            </Card>
+          </Col>
+
+          {/* <Col>
+            <Card 
+            // style={{ width: '20rem' }}
+            >
+              <Card.Body>
+                <Card.Title style={{color:'#011936'}}>O que é esse site?!</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Projeto dedicado a união de áreas</Card.Subtitle>
+                <Card.Text style={{color:'#465362'}}>
+                  Reconhecimento de células hematologicas com AI/RN.
+                </Card.Text>
+                <Card.Link href="/analise">Analise Hematologica</Card.Link>
+                <Card.Link href="/ajudar">Como ajudar</Card.Link>
+              </Card.Body>
+            </Card>  
+          </Col> */}
+
+        </Row>
+      <br/>
+    </Container>
   )
 };

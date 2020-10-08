@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@teachablemachine/image": "^0.8.4",
+    "@tensorflow-models/mobilenet": "^2.0.4",
+    "@tensorflow/tfjs": "^2.4.0",
+    "@tensorflow/tfjs-node": "^2.4.0",
+    "body-parser": "^1.19.0",
+    "canvas": "^2.6.1",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "get-image-data": "^5.0.0",
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4"
+  }
+}
