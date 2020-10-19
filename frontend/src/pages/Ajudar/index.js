@@ -65,7 +65,7 @@ export default function Ajudar(){
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">
-                SUGESTÕES/IDEIAS SÃO SEMPRE BEM VINDAS! </small>
+                SUGESTÕES/IDEIAS SÃO SEMPRE BEM VINDAS! E-mail para contato: ottospi@hotmail.com</small>
             </Card.Footer>
         </Card>
       </Col>

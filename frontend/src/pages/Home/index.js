@@ -20,7 +20,7 @@ export default function Home(){
                   <Card.Title style={{color:'#011936'}}>O que é esse site?!</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">Projeto dedicado a união de áreas</Card.Subtitle>
                   <Card.Text style={{color:'#465362'}}>
-                    Reconhecimento de células hematologicas com AI/RN.
+                    Reconhecimento de células com AI/RN.
                   </Card.Text>
                   <Card.Link href="/analise">Analise Hematologica</Card.Link>
                   <Card.Link href="/ajudar">Como ajudar</Card.Link>
@@ -50,7 +50,7 @@ export default function Home(){
                   O mundo acadêmico tenta fracionar as áreas para facilitar o entendimento,
                   mas as melhores soluções são as mixturadas.
                   Então mixturando as aréas de conhecimento vamos ajudar a vizualização
-                  de cálulas, patógenos e demais requesitos da área!
+                  de cálulas, patógenos e demais requesitos da área da Saúde!
                 </Card.Text>
                 </Card.Body>
             </Card>

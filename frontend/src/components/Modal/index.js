@@ -26,6 +26,8 @@ export default function ModalMail(){
             <Form>
                 <br/>
                 <h3>Envie um e-mail!</h3>
+                <h2 style={{color:'#E63946'}}>Atenção!</h2>
+                <h3 style={{color:'#E63946'}}>Função desabilitada por enquanto</h3>
               {/* <Form.Group>
                 <Form.Label>Nome</Form.Label>
                 <Form.Control type="name" placeholder="Nome" />
